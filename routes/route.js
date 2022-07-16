@@ -127,7 +127,7 @@ router.post("/register",register)
  *               items:
  *                 $ref: '#/components/schemas/task'
 */
-router.get("/",passport.authenticate('jwt',{session: false}), async (req, res) => {
+router.get("/",async (req, res) => {
     console.log("get me all");
     const AllTask = await Task.find({})
     res.send(AllTask)
