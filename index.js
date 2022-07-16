@@ -32,7 +32,7 @@ const options = {
 				url: "http://localhost:4000",
 			},
 			{
-				url: "https://oyester-gamma.vercel.app"
+				url: "https://oyestercrud.vercel.app"
 			}
 		],
 	}, 
