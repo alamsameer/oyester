@@ -12,8 +12,8 @@
 
 ### Local 
   It is the result to my local environment 
-  ![local deployment](images\swaggerLocal.png)
+  ![local deployment](./images/swaggerLocal.png)
 
 ###
  Production deployment result
- ![production deployment](images\swaggerDeployment.png)
+ ![production deployment](./images/swaggerDeployment.png)
