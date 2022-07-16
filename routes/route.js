@@ -157,7 +157,7 @@ router.get("/",passport.authenticate('jwt',{session: false}), async (req, res) =
  *       500:
  *         description: some server error
  */
-router.post("/task", async (req, res) => {
+router.post("/task",passport.authenticate('jwt',{session: false}), async (req, res) => {
     try {
         const { task, status } = req.body
         const addTask = await Task.create({ task, status })
@@ -199,7 +199,7 @@ router.post("/task", async (req, res) => {
  *       404:
  *         description: The Task was not found
  */
-router.put("/task/:id", async (req, res) => {
+router.put("/task/:id",passport.authenticate('jwt',{session: false}), async (req, res) => {
     try {
         const id = req.params.id
         const { task, status } = req.body
@@ -237,7 +237,7 @@ router.put("/task/:id", async (req, res) => {
  *       500:
  *         description: The task was not found to delete
  */
-router.delete("/task/:id", async (req, res) => {
+router.delete("/task/:id",passport.authenticate('jwt',{session: false}), async (req, res) => {
     try{
         const id = req.query.id
         const deleteTask = await Task.deleteOne({ id })
