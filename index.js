@@ -31,6 +31,9 @@ const options = {
 			{
 				url: "http://localhost:4000",
 			},
+			{
+				url: "https://oyester-gamma.vercel.app"
+			}
 		],
 	}, 
 	apis: ["./routes/*.js"],
